@@ -9,7 +9,6 @@ var pivotIndex = function(nums) {
         const right = nums.slice(i+1, nums.length);
         const leftSum = left.reduce((pre, curr) => pre + curr, 0);
         const rightSum = right.reduce((pre, curr) => pre + curr, 0);
-        console.log(i, leftSum, rightSum)
         if (leftSum === rightSum) {
             pivot = i;
             break;
