@@ -14,12 +14,10 @@ var pivotIndex = function(nums) {
         backNum = nums[i];
         if (leftSum === rightSum) {
             pivot = i;
-            break;
+            return pivot;
         }
     }
-    if (pivot != undefined) {
-        return pivot;
-    } else {
+    if (pivot === undefined) {
         return -1;
     }
 };
